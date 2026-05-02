@@ -1,0 +1,30 @@
+// ────────────── Input Configuration ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Input
+
+input {
+    keyboard {
+        xkb {
+            // If you want to override your keyboard layout, uncomment and edit:
+            // layout "us"
+        }
+        numlock
+        repeat-delay 275
+        repeat-rate 25
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+    }
+
+    mouse {
+        // Uncomment to disable mouse acceleration:
+        // accel-profile "flat"
+        accel-speed 0.0
+        natural-scroll
+    }
+
+    focus-follows-mouse
+    workspace-auto-back-and-forth
+    warp-mouse-to-focus mode="center-xy"
+}

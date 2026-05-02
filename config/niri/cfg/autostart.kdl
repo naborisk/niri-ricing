@@ -1,0 +1,8 @@
+// ────────────── Startup Applications ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
+
+// Quickshell + Noctalia (bar, launcher, lock, notifications, wallpaper, OSDs)
+spawn-sh-at-startup "qs -c noctalia-shell"
+
+// Polkit agent — required for sudo prompts in GUI apps.
+spawn-at-startup "/usr/lib/hyprpolkitagent"

@@ -1,0 +1,19 @@
+{
+    "_comment": "Tokyonight Moon palette for Noctalia. Mapped colorblind-aware: blue (mPrimary) is success/accept, red (mError) is danger. Source palette: ../colors/tokyonight-moon.json.",
+    "mError":            "#ff757f",
+    "mHover":            "#82aaff",
+    "mOnError":          "#1e2030",
+    "mOnHover":          "#1e2030",
+    "mOnPrimary":        "#1e2030",
+    "mOnSecondary":      "#1e2030",
+    "mOnSurface":        "#c8d3f5",
+    "mOnSurfaceVariant": "#828bb8",
+    "mOnTertiary":       "#1e2030",
+    "mOutline":          "#3b4261",
+    "mPrimary":          "#82aaff",
+    "mSecondary":        "#c099ff",
+    "mShadow":           "#0d0e15",
+    "mSurface":          "#222436",
+    "mSurfaceVariant":   "#2f334d",
+    "mTertiary":         "#86e1fc"
+}

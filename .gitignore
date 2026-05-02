@@ -1,0 +1,6 @@
+# Per-machine niri output configuration.
+# Run `niri msg outputs` to find your displays, write the actual `output` blocks
+# to this file, and uncomment the `include "./display.local.kdl"` line in
+# config/niri/cfg/display.kdl.
+config/niri/cfg/display.local.kdl
+.claude/

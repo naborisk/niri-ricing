@@ -1,0 +1,26 @@
+// ────────────── Output Configuration ──────────────
+// Run `niri msg outputs` to find your display names + modes.
+//
+// This file is part of the rice repo. Per-machine output settings should live
+// in `display.local.kdl` next to this file (gitignored), and the include below
+// pulls them in. Uncomment the include after you create the local file.
+//
+// include "./display.local.kdl"
+//
+// ─── Example: 4K display at 1.75 scale ───
+//
+// output "DP-1" {
+//     mode "3840x2160@59.997"
+//     scale 1.75
+//     hot-corners {
+//         off
+//     }
+// }
+//
+// output "DP-2" {
+//     mode "3840x2160@59.997"
+//     scale 1.75
+//     hot-corners {
+//         top-left
+//     }
+// }
