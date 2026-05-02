@@ -8,6 +8,8 @@ Running log of ricing choices made during the niri-ricing setup. Append new entr
 
 **Why:** Caelestia is Hyprland-first (second-class niri support); from-scratch means weeks of bare desktop. Noctalia was Niri-first and matches the existing IPC keybinds.
 
+**Important:** Noctalia uses a custom Quickshell fork called `noctalia-qs` (not upstream `quickshell`). The fork adds QML types like `PwAudioSpectrum` that Noctalia uses but upstream lacks. `noctalia-qs` declares `Provides=quickshell` and conflicts with the upstream package — only one can be installed at a time. Stage 02 installs `noctalia-shell` from AUR, which pulls `noctalia-qs` plus runtime deps (`imagemagick`, `brightnessctl`, `ffmpeg`, `qt6-multimedia`, `python`, `wlr-randr`). Trying to install upstream `quickshell` alongside Noctalia produces a cascade of "Type X unavailable" QML errors — discovered the hard way during VM testing.
+
 ## 2026-05-02 — Palette: Tokyonight Moon
 
 **Chosen:** Tokyonight Moon as the static base palette in `colors/tokyonight-moon.json`. Semantic mapping is **deuteranomaly-aware**: blue/cyan for success, red `#ff757f` for danger.
