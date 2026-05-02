@@ -62,13 +62,14 @@ Running log of ricing choices made during the niri-ricing setup. Append new entr
 "enableClipboardHistory": true,
 ```
 
-## 2026-05-02 — Theming: magnetic-tokyo + Bibata + Papirus + Qt-via-GTK
+## 2026-05-02 — Theming: tokyonight-gtk-theme-git + Bibata + Papirus + Qt-via-GTK
 
 **Chosen:**
-- GTK: `magnetic-tokyo-gtk-theme` (AUR; libadwaita-friendly Tokyonight port)
+- GTK: `tokyonight-gtk-theme-git` (AUR; same Tokyonight palette family). Originally planned to use Magnetic-Tokyo, but it isn't AUR-packaged and would require manual `meson` build. Swapped during install testing — see commit notes.
 - Cursor: `Bibata-Modern-Ice` (AUR: `bibata-cursor-theme-bin`); replaces capitaine-cursors in `cfg/misc.kdl`
 - Icons: `papirus-icon-theme` + `papirus-folders-git`, recolored with `papirus-folders -C cat-blue --theme Papirus-Dark`
 - Qt: inherit from GTK (`QT_QPA_PLATFORMTHEME=gtk3` already in `cfg/misc.kdl`); no qt6ct, no kvantum
+- `gtk-engine-murrine` was dropped from Arch's `[extra]` and is AUR-only now (GTK2-era). We don't install it; modern GTK4/libadwaita themes don't need it.
 
 ## 2026-05-02 — Infrastructure (polkit / portals / audio / bluetooth / network / greeter)
 

@@ -11,11 +11,14 @@ sudo pacman -S --needed --noconfirm \
     noto-fonts-cjk \
     noto-fonts-emoji
 
-echo "  installing GTK plumbing + Papirus icons..."
-sudo pacman -S --needed --noconfirm gtk-engine-murrine papirus-icon-theme
+echo "  installing Papirus icons..."
+# Note: gtk-engine-murrine was dropped from Arch's [extra] repo (now AUR-only,
+# GTK2-era engine). Magnetic-Tokyo isn't AUR-packaged. We use the AUR
+# tokyonight-gtk-theme-git port instead — same palette family, easy install.
+sudo pacman -S --needed --noconfirm papirus-icon-theme
 
-echo "  installing magnetic-tokyo GTK theme + Bibata cursor (AUR)..."
-paru -S --needed --noconfirm magnetic-tokyo-gtk-theme bibata-cursor-theme-bin papirus-folders-git
+echo "  installing tokyonight GTK theme + Bibata cursor (AUR)..."
+paru -S --needed --noconfirm tokyonight-gtk-theme-git bibata-cursor-theme-bin papirus-folders-git
 
 echo "  recoloring Papirus folders to Tokyo-blue..."
 if command -v papirus-folders >/dev/null 2>&1; then
